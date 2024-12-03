@@ -1,6 +1,8 @@
 # Tauri + React + Typescript
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Start by cloning the repository, and then follow [prerequisites](https://tauri.app/start/prerequisites/) to get the environment setup.
+
+Tasks are available at the [KanBan](https://github.com/orgs/ArkForgeLabs/projects/3)
 
 ## Recommended IDE Setup
 
