@@ -1,35 +1,50 @@
 {
-  "$schema": "https://schema.tauri.app/config/2",
-  "productName": "aster",
-  "version": "0.1.0",
-  "identifier": "net.arkforge.aster",
   "build": {
-    "beforeDevCommand": "deno task dev",
-    "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "deno task build",
-    "frontendDist": "../dist"
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
   },
-  "app": {
-    "windows": [
-      {
-        "title": "aster",
-        "width": 800,
-        "height": 600
+  "package": {
+    "productName": "Aide",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "globalShortcut": {
+        "all": true
+      },
+      "fs": {
+        "all": true,
+        "scope": ["**"]
       }
-    ],
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.aide.dev",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
     "security": {
       "csp": null
-    }
-  },
-  "bundle": {
-    "active": true,
-    "targets": "all",
-    "icon": [
-      "icons/32x32.png",
-      "icons/128x128.png",
-      "icons/128x128@2x.png",
-      "icons/icon.icns",
-      "icons/icon.ico"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Aide",
+        "width": 800,
+        "height": 600,
+        "decorations": false,
+        "transparent": true
+      }
     ]
   }
 }
