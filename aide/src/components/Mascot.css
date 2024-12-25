@@ -1,0 +1,33 @@
+.mascot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.mascot:hover {
+  transform: scale(1.1);
+}
+
+.mascot.animate {
+  animation: bounce 0.5s ease;
+}
+
+.mascot-emoji {
+  font-size: 48px;
+  text-align: center;
+  line-height: 60px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
