@@ -1,3 +1,5 @@
+> [!IMPORTANT]  
+> This project was built by the internship team A at ArkForge. This is NOT a production ready software, nor should be treated as such.
 
 🌟 **Aide: Your Offline AI Assistant, Redefined**  
 
